@@ -20,7 +20,7 @@ class Drawerr extends StatelessWidget {
             ),
             child: CircleAvatar(
             radius: 80,
-            backgroundImage: AssetImage('assets/ai.jpg'))),
+            backgroundImage: AssetImage('assets/images/ai.jpg'))),
 
             Column(
               children:[
@@ -35,11 +35,11 @@ class Drawerr extends StatelessWidget {
                   ListTile(
                   title:Text('ANN'),
                   onTap:(){
-                    Navigator.push(context,MaterialPageRoute(builder: (context)=>Ann()));
+                    Navigator.push(context,MaterialPageRoute(builder: (context)=>const Ann()));
                   }),
                   ListTile(title:Text('CNN'),
                    onTap:(){
-                    Navigator.push(context,MaterialPageRoute(builder: (context)=>cnn()));
+                    Navigator.push(context,MaterialPageRoute(builder: (context)=>const Cnn()));
                   })
                 ]),
 
