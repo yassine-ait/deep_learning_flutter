@@ -48,10 +48,10 @@ android {
         applicationId "com.example.tp_deep_learning"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+        minSdkVersion 19
     }
 
     buildTypes {
@@ -60,6 +60,10 @@ android {
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
         }
+    }
+    aaptOptions {
+        noCompress 'tflite'
+        noCompress 'lite'
     }
 }
 

@@ -29,25 +29,19 @@ class Drawerr extends StatelessWidget {
                 children:[
                   ListTile(title:Text('Documentation'))
                 ]),
-                ExpansionTile(title:Text('Classification Algorithm'),
-                leading:Icon(Icons.article),
+                ExpansionTile(title:const Text('Classification Algorithm'),
+                leading:const Icon(Icons.article),
                 children:[
                   ListTile(
-                  title:Text('ANN'),
+                  title:const Text('ANN'),
                   onTap:(){
                     Navigator.push(context,MaterialPageRoute(builder: (context)=>const Ann()));
                   }),
-                  ListTile(title:Text('CNN'),
+                  ListTile(title:const Text('CNN'),
                    onTap:(){
                     Navigator.push(context,MaterialPageRoute(builder: (context)=>const Cnn()));
                   })
                 ]),
-
-              
-
-
-
-
               ]
 
 
